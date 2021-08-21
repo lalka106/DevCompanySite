@@ -1,8 +1,3 @@
-/*Header*/
-header {
-  background-color: black;
-}
-
 /* Box sizing rules */
 *,
 *::before,
@@ -86,6 +81,41 @@ select {
   }
 }
 
+/*Header*/
+.header {
+  z-index: 3;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.menu {
+  text-decoration: none;
+  list-style-type: none;
+  height: 85px;
+  padding: 30px 0 0 0;
+}
+
+.menu__item {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  display: inline-block;
+  margin: 0 50px;
+  height: 12px;
+  font-size: 15px;
+  color: #3c3c3c;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.menu__item:hover {
+  color: #ada074;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
 h1 {
   color: green;
 }
@@ -95,7 +125,10 @@ h1:hover {
 }
 
 .logo {
+  color: white;
   display: inline-block;
+  font-size: 30px;
+  font-weight: 900;
 }
 
 .button {
@@ -173,14 +206,14 @@ body {
 }
 
 .block1__btn:hover {
-  color: red;
+  color: #3c3c3c;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
 .block1::after {
-  content: "\02C7";
-  font-size: 70px;
+  content: "\142F";
+  font-size: 30px;
   color: white;
   width: 17px;
   height: 10px;

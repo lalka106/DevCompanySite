@@ -1,5 +1,6 @@
-@import "_header";
 @import "_nullstyle";
+
+@import "_header";
 
 h1 {
 	color: green;
@@ -8,7 +9,10 @@ h1 {
 	}
 }
 .logo {
+	color: white;
 	display: inline-block;
+	font-size: 30px;
+	font-weight: 900;
 }
 
 .button {
@@ -78,13 +82,13 @@ body {
 	&__btn {
 		color: white;
 		&:hover {
-			color: red;
+			color: #3c3c3c;
 			transition: 0.3s;
 		}
 	}
 	&::after {
-		content: "\02C7";
-		font-size: 70px;
+		content: "\142F";
+		font-size: 30px;
 		color: white;
 		width: 17px;
 		height: 10px;
