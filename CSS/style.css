@@ -1,15 +1,187 @@
+/*Header*/
 header {
   background-color: black;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    -webkit-transition-duration: 0.01ms !important;
+            transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
 
 h1 {
   color: green;
 }
 
-body {
-  font-size: 20px;
+h1:hover {
+  color: red;
 }
 
-body div {
-  font-size: 10px;
+.logo {
+  display: inline-block;
+}
+
+.button {
+  display: block;
+  width: 180px;
+  height: 50px;
+  margin: 0 auto;
+  border: 1px solid;
+  position: inherit;
+  padding: 10px 0 0 0;
+}
+
+body {
+  max-width: 100%;
+  padding: 0 0 711px;
+  font-family: Lato;
+}
+
+.title {
+  display: inline-block;
+  width: 754px;
+  height: 70px;
+  font-size: 34px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.18;
+  letter-spacing: 3px;
+  text-align: center;
+  margin: 0 0 150px 0;
+  color: black;
+  text-transform: uppercase;
+}
+
+.block1 {
+  background: url(../img/mac.jpg);
+  background-size: cover;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-height: 666px;
+  margin: 0 auto;
+}
+
+.block1__logo {
+  width: 195px;
+  height: 123px;
+  margin: 150px 270px 50px 270px;
+}
+
+.block1__title {
+  color: white;
+}
+
+.block1__title span {
+  font-size: 26px;
+  font-weight: normal;
+  letter-spacing: 2px;
+  text-transform: none;
+}
+
+.block1__title span:after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 1px;
+  left: 50%;
+  background-color: white;
+  margin: 70px 0 0 -25px;
+}
+
+.block1__btn {
+  color: white;
+}
+
+.block1__btn:hover {
+  color: red;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.block1::after {
+  content: "\02C7";
+  font-size: 70px;
+  color: white;
+  width: 17px;
+  height: 10px;
 }
