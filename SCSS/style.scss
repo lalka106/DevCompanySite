@@ -16,7 +16,7 @@ h1 {
 }
 
 .button {
-	display: block;
+	display: inline-block;
 	width: 180px;
 	height: 50px;
 	margin: 0 auto;
@@ -32,7 +32,7 @@ body {
 	font-family: Lato;
 }
 .title {
-	display: inline-block;
+	display: block;
 	height: 70px;
 	font-size: 34px;
 	font-weight: bold;
@@ -68,7 +68,7 @@ body {
 	&__logo {
 		width: 100%;
 		height: 123px;
-		margin: 150px 0 50px 0;
+		margin: 100px 0 50px 0;
 	}
 
 	&__title {
@@ -95,18 +95,21 @@ body {
 
 	&__btn {
 		color: white;
-		text-decoration: none;
+		// text-decoration: none;
+		margin: 15px 0 50px 0;
 		&:hover {
 			color: #3c3c3c;
 			transition: 0.3s;
+			&:after {
+				display: block;
+				content: "\142F";
+				font-size: 30px;
+				color: #3c3c3c;
+				width: 16px;
+				height: 10px;
+				margin: 4px 0 0 80px;
+			}
 		}
-	}
-	&::after {
-		content: "\142F";
-		font-size: 30px;
-		color: white;
-		width: 17px;
-		height: 10px;
 	}
 }
 
@@ -114,9 +117,9 @@ body {
 	margin: 50px 0 0 0;
 	&__title {
 		display: block;
-		margin: 0 auto;
-		width: 688px;
-		height: 66px;
+		margin: 0 auto 60px;
+		// width: 688px;
+		height: 36px;
 		&:after {
 			content: "";
 			position: absolute;
@@ -152,7 +155,12 @@ body {
 			border: 2px solid gray;
 			border-radius: 50%;
 			text-align: center;
-			background: mistyrose;
+			background: white;
+			& img {
+				width: 52px;
+				height: 52px;
+				margin: 17px auto;
+			}
 		}
 		&__title {
 			font-family: Lato;
@@ -177,6 +185,94 @@ body {
 			&:nth-child(3) {
 				width: 256px;
 				height: 66px;
+			}
+		}
+	}
+}
+
+.portfolio {
+	padding: 30px 0 0 0;
+	margin: 0 auto;
+	text-align: center;
+	&__title {
+		height: 36px;
+		&:after {
+			content: "";
+			position: absolute;
+			width: 50px;
+			height: 1px;
+			left: 50%;
+			background-color: black;
+			margin: 70px 0 0 -25px;
+		}
+	}
+
+	&__menu {
+		text-align: center;
+		margin: 35px auto;
+		&__item {
+			display: inline-block;
+			margin: 0 40px 0 30px;
+			cursor: pointer;
+			&:hover {
+				color: #ada074;
+				transition: 0.3s;
+			}
+		}
+	}
+
+	&__photos {
+		text-align: center;
+		&__item {
+			display: inline-block;
+			margin: 0px 10px 10px 10px;
+			text-align: center;
+			width: 538px;
+			height: 365px;
+			background-color: #eaeaea;
+			& img {
+				margin: 5px auto;
+				width: 528px;
+				height: 355px;
+			}
+		}
+	}
+
+	&__button {
+		margin: 50px auto;
+		display: inline-block;
+		color: #000;
+		&:hover {
+			color: #3c3c3c;
+			box-shadow: 0 5px 5px#3c3c3c;
+			transition: 0.3s;
+		}
+	}
+}
+
+.partners {
+	text-align: center;
+	height: 350px;
+	background: url(https://kartinkin.com/uploads/posts/2020-07/1595768850_36-p-fioletovo-sinie-foni-40.jpg);
+	&__title {
+		display: inline-block;
+		margin: 60px 0 60px 0;
+		font-size: 35px;
+		color: white;
+		font-weight: normal;
+	}
+
+	&__logos {
+		height: 150px;
+		width: 100%;
+		&__item {
+			display: inline-block;
+			cursor: pointer;
+			margin: 0px 30px 0px 30px;
+
+			& img {
+				height: 100px;
+				width: 100px;
 			}
 		}
 	}

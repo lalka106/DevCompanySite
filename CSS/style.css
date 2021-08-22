@@ -88,6 +88,10 @@ select {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: white;
 }
 
 .menu {
@@ -98,16 +102,13 @@ select {
 }
 
 .menu__item {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
   display: inline-block;
   margin: 0 50px;
-  height: 12px;
   font-size: 15px;
   color: #3c3c3c;
   font-weight: bold;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .menu__item:hover {
@@ -132,7 +133,7 @@ h1:hover {
 }
 
 .button {
-  display: block;
+  display: inline-block;
   width: 180px;
   height: 50px;
   margin: 0 auto;
@@ -149,7 +150,7 @@ body {
 }
 
 .title {
-  display: inline-block;
+  display: block;
   height: 70px;
   font-size: 34px;
   font-weight: bold;
@@ -190,7 +191,7 @@ body {
 .block1__logo {
   width: 100%;
   height: 123px;
-  margin: 150px 0 50px 0;
+  margin: 100px 0 50px 0;
 }
 
 .block1__title {
@@ -217,7 +218,7 @@ body {
 
 .block1__btn {
   color: white;
-  text-decoration: none;
+  margin: 15px 0 50px 0;
 }
 
 .block1__btn:hover {
@@ -226,12 +227,14 @@ body {
   transition: 0.3s;
 }
 
-.block1::after {
+.block1__btn:hover:after {
+  display: block;
   content: "\142F";
   font-size: 30px;
-  color: white;
-  width: 17px;
+  color: #3c3c3c;
+  width: 16px;
   height: 10px;
+  margin: 4px 0 0 80px;
 }
 
 .about {
@@ -240,9 +243,8 @@ body {
 
 .about__title {
   display: block;
-  margin: 0 auto;
-  width: 688px;
-  height: 66px;
+  margin: 0 auto 60px;
+  height: 36px;
 }
 
 .about__title:after {
@@ -284,7 +286,13 @@ body {
   border: 2px solid gray;
   border-radius: 50%;
   text-align: center;
-  background: mistyrose;
+  background: white;
+}
+
+.row__item__icon img {
+  width: 52px;
+  height: 52px;
+  margin: 17px auto;
 }
 
 .row__item__title {
@@ -312,4 +320,104 @@ body {
 .row__item__subtitle:nth-child(3) {
   width: 256px;
   height: 66px;
+}
+
+.portfolio {
+  padding: 30px 0 0 0;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.portfolio__title {
+  height: 36px;
+}
+
+.portfolio__title:after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 1px;
+  left: 50%;
+  background-color: black;
+  margin: 70px 0 0 -25px;
+}
+
+.portfolio__menu {
+  text-align: center;
+  margin: 35px auto;
+}
+
+.portfolio__menu__item {
+  display: inline-block;
+  margin: 0 40px 0 30px;
+  cursor: pointer;
+}
+
+.portfolio__menu__item:hover {
+  color: #ada074;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.portfolio__photos {
+  text-align: center;
+}
+
+.portfolio__photos__item {
+  display: inline-block;
+  margin: 0px 10px 10px 10px;
+  text-align: center;
+  width: 538px;
+  height: 365px;
+  background-color: #eaeaea;
+}
+
+.portfolio__photos__item img {
+  margin: 5px auto;
+  width: 528px;
+  height: 355px;
+}
+
+.portfolio__button {
+  margin: 50px auto;
+  display: inline-block;
+  color: #000;
+}
+
+.portfolio__button:hover {
+  color: #3c3c3c;
+  -webkit-box-shadow: 0 5px 5px #3c3c3c;
+          box-shadow: 0 5px 5px #3c3c3c;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.partners {
+  text-align: center;
+  height: 350px;
+  background: url(https://kartinkin.com/uploads/posts/2020-07/1595768850_36-p-fioletovo-sinie-foni-40.jpg);
+}
+
+.partners__title {
+  display: inline-block;
+  margin: 60px 0 60px 0;
+  font-size: 35px;
+  color: white;
+  font-weight: normal;
+}
+
+.partners__logos {
+  height: 150px;
+  width: 100%;
+}
+
+.partners__logos__item {
+  display: inline-block;
+  cursor: pointer;
+  margin: 0px 30px 0px 30px;
+}
+
+.partners__logos__item img {
+  height: 100px;
+  width: 100px;
 }
