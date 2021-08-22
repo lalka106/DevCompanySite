@@ -3,6 +3,9 @@
 	z-index: 3;
 	text-align: center;
 	justify-content: center;
+	position: sticky;
+	top: 0;
+	background-color: white;
 }
 .menu {
 	text-decoration: none;
@@ -10,15 +13,14 @@
 	height: 85px;
 	padding: 30px 0 0 0;
 	&__item {
-		position: sticky;
-		top: 0;
 		display: inline-block;
 		margin: 0 50px;
-		height: 12px;
+		// height: 20px;
 		font-size: 15px;
 		color: #3c3c3c;
 		font-weight: bold;
 		text-transform: uppercase;
+		cursor: pointer;
 		&:hover {
 			color: #ada074;
 			transition: 0.3s;
