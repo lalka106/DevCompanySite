@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
 @import "_nullstyle";
 
 @import "_header";
@@ -239,7 +241,7 @@ body {
 	}
 
 	&__button {
-		margin: 50px auto;
+		margin: 50px 0 0 0;
 		display: inline-block;
 		color: #000;
 		&:hover {
@@ -252,19 +254,20 @@ body {
 
 .partners {
 	text-align: center;
+	margin: 60px 0 0 0;
+	padding: 60px 0 0 0;
+
 	height: 350px;
-	background: url(https://kartinkin.com/uploads/posts/2020-07/1595768850_36-p-fioletovo-sinie-foni-40.jpg);
+	background: url(https://kartinkin.com/uploads/posts/2021-01/1611955165_48-p-foni-dlya-prezentatsii-s-gorodami-50.jpg);
 	&__title {
-		display: inline-block;
-		margin: 60px 0 60px 0;
 		font-size: 35px;
 		color: white;
 		font-weight: normal;
 	}
 
 	&__logos {
+		margin: 30px 0 0 0;
 		height: 150px;
-		width: 100%;
 		&__item {
 			display: inline-block;
 			cursor: pointer;
@@ -275,5 +278,91 @@ body {
 				width: 100px;
 			}
 		}
+	}
+}
+.contact {
+	margin: 100px 0px 0px 0px;
+	&__title {
+		&:after {
+			content: "";
+			position: absolute;
+			width: 50px;
+			height: 1px;
+			left: 50%;
+			background-color: black;
+			margin: 70px 0 0 -25px;
+		}
+	}
+
+	&__row {
+		margin: 100px 0 0 0px;
+		height: 400px;
+
+		text-align: center;
+		&__item {
+			width: 400px;
+			height: 300px;
+			display: inline-block;
+			margin: 0 50px 0 50px;
+			text-align: left;
+		}
+	}
+}
+.form {
+	display: inline-block;
+	width: 390px;
+	height: 290px;
+	&__title {
+		display: block;
+		width: 100px;
+		font-weight: 900;
+	}
+	&__name {
+		width: 161px;
+		height: 35px;
+	}
+
+	&__email {
+		width: 161px;
+		height: 35px;
+	}
+
+	&__textarea {
+		width: 383px;
+		height: 118px;
+	}
+	&__button {
+	}
+	& input {
+		background-color: #f8f7f7;
+		border: none;
+		border-top: 2px solid black;
+	}
+}
+.item {
+	display: inline-block;
+	width: 390px;
+	height: 290px;
+	&__subtitle {
+		width: 380px;
+	}
+
+	&__author {
+		margin: 20px 0px 0px 0px;
+		font-weight: bold;
+	}
+
+	&__icons {
+		margin: 20px 0px 0px 0px;
+	}
+
+	&__email {
+		margin: 20px 0px 0px 0px;
+
+		font-weight: bold;
+	}
+}
+.icons {
+	&__item {
 	}
 }
