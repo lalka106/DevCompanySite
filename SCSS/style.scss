@@ -10,13 +10,9 @@ h1 {
 		color: red;
 	}
 }
-.logo {
-	color: white;
-	display: inline-block;
-	font-size: 30px;
-	font-weight: 900;
+a {
+	text-decoration: none;
 }
-
 .button {
 	display: inline-block;
 	width: 180px;
@@ -30,7 +26,7 @@ h1 {
 
 body {
 	max-width: 100%;
-	padding: 0 0 711px;
+	min-width: 700px;
 	font-family: Lato;
 }
 .title {
@@ -63,19 +59,22 @@ body {
 	background: url(../img/mac.jpg);
 	background-size: cover;
 	text-align: center;
-	justify-content: center;
 	max-height: 666px;
 	// height: 1282px-35px-58px;
 	margin: 0 auto;
 	&__logo {
+		color: white;
+		display: inline-block;
 		width: 100%;
 		height: 123px;
 		margin: 100px 0 50px 0;
+		font-size: 30px;
+		font-weight: 900;
 	}
 
 	&__title {
 		margin: 0 0 150px 0;
-
+		min-width: 700px;
 		color: white;
 
 		span {
@@ -134,7 +133,8 @@ body {
 	}
 
 	&__subtitle {
-		width: 688px;
+		max-width: 688px;
+		min-width: 300px;
 		height: 66px;
 	}
 
@@ -216,6 +216,7 @@ body {
 			display: inline-block;
 			margin: 0 40px 0 30px;
 			cursor: pointer;
+			color: #3c3c3c;
 			&:hover {
 				color: #ada074;
 				transition: 0.3s;
@@ -258,7 +259,7 @@ body {
 	padding: 60px 0 0 0;
 
 	height: 350px;
-	background: url(https://kartinkin.com/uploads/posts/2021-01/1611955165_48-p-foni-dlya-prezentatsii-s-gorodami-50.jpg);
+	background: url(../img/partners.jpg);
 	&__title {
 		font-size: 35px;
 		color: white;
@@ -295,26 +296,31 @@ body {
 	}
 
 	&__row {
+		display: flex;
+		flex: 0 1 50%;
+		justify-content: center;
+		flex-wrap: wrap;
 		margin: 100px 0 0 0px;
-		height: 400px;
+		// height: 400px;
 
 		text-align: center;
 		&__item {
 			width: 400px;
 			height: 300px;
-			display: inline-block;
+			// display: inline-block;
+			display: flex;
 			margin: 0 50px 0 50px;
 			text-align: left;
 		}
 	}
 }
 .form {
-	display: inline-block;
-	width: 390px;
-	height: 290px;
+	display: flex;
+	flex-direction: column;
+	// width: 390px;
+	// height: 290px;
 	&__title {
-		display: block;
-		width: 100px;
+		// width: 100px;
 		font-weight: 900;
 	}
 	&__name {
@@ -332,6 +338,16 @@ body {
 		height: 118px;
 	}
 	&__button {
+		margin: 10px 0 0 0;
+		width: 100px;
+		border: none;
+		background: none;
+		align-self: flex-end;
+		cursor: pointer;
+		&:hover {
+			// border: 2px solid black;
+			box-shadow: 2px 2px 3px black;
+		}
 	}
 	& input {
 		background-color: #f8f7f7;
@@ -340,7 +356,7 @@ body {
 	}
 }
 .item {
-	display: inline-block;
+	// display: inline-block;
 	width: 390px;
 	height: 290px;
 	&__subtitle {
@@ -364,5 +380,43 @@ body {
 }
 .icons {
 	&__item {
+	}
+}
+
+.footer {
+	box-shadow: -3px -3px 10px black;
+	margin: 50px 0 0 0;
+	padding: 60px 0;
+	background: #000;
+	display: flex;
+	flex: 0 1 33.3333%;
+	flex-flow: column wrap;
+	align-content: center;
+	color: white;
+	justify-content: center;
+	text-align: center;
+	&__logo {
+		font-size: 20px;
+	}
+
+	&__menu {
+		display: flex;
+		flex: 0 0 25%;
+		&__item {
+			text-decoration: none;
+			list-style-type: none;
+			margin: 20px 20px 20px 20px;
+			color: gray;
+
+			&:hover {
+				color: #ada074;
+				transition: 0.3s;
+				cursor: pointer;
+			}
+		}
+	}
+
+	&__copyright {
+		color: #5a5959;
 	}
 }
