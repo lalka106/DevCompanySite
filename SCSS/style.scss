@@ -234,9 +234,9 @@ body {
 			height: 365px;
 			background-color: #eaeaea;
 			& img {
-				margin: 5px auto;
-				width: 528px;
-				height: 355px;
+				// margin: 5px auto;
+				width: 538px;
+				height: 365px;
 			}
 		}
 	}
@@ -419,4 +419,11 @@ body {
 	&__copyright {
 		color: #5a5959;
 	}
+}
+
+.portfolio__menu__item.active {
+	color: #ada074;
+}
+.portfolio__photos.active {
+	display: inline-block;
 }

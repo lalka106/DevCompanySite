@@ -375,9 +375,8 @@ body {
 }
 
 .portfolio__photos__item img {
-  margin: 5px auto;
-  width: 528px;
-  height: 355px;
+  width: 538px;
+  height: 365px;
 }
 
 .portfolio__button {
@@ -591,4 +590,12 @@ body {
 
 .footer__copyright {
   color: #5a5959;
+}
+
+.portfolio__menu__item.active {
+  color: #ada074;
+}
+
+.portfolio__photos.active {
+  display: inline-block;
 }

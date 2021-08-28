@@ -78,21 +78,39 @@
 	<div class="portfolio">
 		<div class="portfolio__title title">PORTFOLIO</div>
 		<nav class="portfolio__menu menu">
-			<a href="#">
-				<li class="portfolio__menu__item">ALL</li>
-			</a>
-			<a href="">
-				<li class="portfolio__menu__item">WEB</li>
-			</a>
-			<a href="">
-				<li class="portfolio__menu__item">APPS</li>
-			</a>
-			<a href="">
-				<li class="portfolio__menu__item">OTHER</li>
-			</a>
+			<!-- <a href="#"> -->
+			<li class="portfolio__menu__item active" data-tab="#tab1">ALL</li>
+			<!-- </a> -->
+			<!-- <a href=""> -->
+			<li class="portfolio__menu__item" data-tab="#tab2">WEB</li>
+			<!-- </a> -->
+			<!-- <a href=""> -->
+			<li class="portfolio__menu__item" data-tab="#tab3">APPS</li>
+			<!-- </a> -->
+			<!-- <a href=""> -->
+			<li class="portfolio__menu__item" data-tab="#tab4">OTHER</li>
+			<!-- </a> -->
 		</nav>
-		<div class="portfolio__photos">
+		<div class="portfolio__photos active" id="tab1" hidden>
 			<div class="portfolio__photos__item"><img src="../John/img/mac.png" alt=""></div>
+			<div class="portfolio__photos__item"></div>
+			<div class="portfolio__photos__item"></div>
+			<div class="portfolio__photos__item"></div>
+		</div>
+		<div class="portfolio__photos" id="tab2" hidden>
+			<div class="portfolio__photos__item"><img src="#" alt=""></div>
+			<div class="portfolio__photos__item"></div>
+			<div class="portfolio__photos__item"></div>
+			<div class="portfolio__photos__item"></div>
+		</div>
+		<div class="portfolio__photos" id="tab3" hidden>
+			<div class="portfolio__photos__item"><img src="" alt=""></div>
+			<div class="portfolio__photos__item"></div>
+			<div class="portfolio__photos__item"></div>
+			<div class="portfolio__photos__item"></div>
+		</div>
+		<div class="portfolio__photos" id="tab4" hidden>
+			<div class="portfolio__photos__item"><img src="" alt=""></div>
 			<div class="portfolio__photos__item"></div>
 			<div class="portfolio__photos__item"></div>
 			<div class="portfolio__photos__item"></div>
@@ -169,6 +187,7 @@
 		</nav>
 		<div class="footer__copyright">2015. All Rights Reserved</div>
 	</footer>
+	<script src="js/tab_menu.js"></script>
 </body>
 
 </html>
